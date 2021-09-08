@@ -11,6 +11,6 @@ pipelines:
           name: 'Build and Test'
           script:
             - git remote remove origin
-            - git remote add origin https://github.com/narayansharma91/bitbucket-backup.git
+            - git remote add origin https://narayansharma91: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/github.com/narayansharma91/bitbucket-backup.git
             - git branch -M main
             - git push -u origin main
