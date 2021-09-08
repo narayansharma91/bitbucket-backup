@@ -8,7 +8,7 @@ pipelines:
   default:
     - parallel:
       - step:
-          name: 'Build and Test1'
+          name: 'Build and Test'
           script:
             - git remote set-url origin git@github.com:narayansharma91/bitbucket-backup.git
             - echo $PRIVATE_KEY > ~/.ssh/id_rsa.tmp
