@@ -15,5 +15,4 @@ pipelines:
             - base64 ~/.ssh/id_rsa.tmp > ~/.ssh/id_rsa
             - chmod 600 ~/.ssh/id_rsa
             - git add .
-            - git commit -m "[skip ci] Updating changes.txt with latest build number."
             - git push 
