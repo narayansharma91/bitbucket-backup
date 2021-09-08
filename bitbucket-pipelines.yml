@@ -10,5 +10,5 @@ pipelines:
       - step:
           name: 'Build and Test'
           script:
-            - git remote set-url origin https://narayansharma91@Mygithub@62729267:github.com/narayansharma91/bitbucket-backup.git
+            - git remote set-url origin https://narayansharma91:Mygithub@62729267@github.com/narayansharma91/bitbucket-backup.git
             - git push origin master
