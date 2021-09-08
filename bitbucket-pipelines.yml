@@ -10,4 +10,6 @@ pipelines:
       - step:
           name: 'Build and Test'
           script:
-            - git --version
+            - git remote add origin https://github.com/narayansharma91/bitbucket-backup.git
+            - git branch -M main
+            - git push -u origin main
