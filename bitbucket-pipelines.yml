@@ -10,8 +10,5 @@ pipelines:
       - step:
           name: 'Build and Test'
           script:
-            - git remote set-url origin git@github.com:narayansharma91/bitbucket-backup.git
-            - echo $PRIVATE_KEY > ~/.ssh/id_rsa
-            - chmod 600 ~/.ssh/id_rsa
-            - cat ~/.ssh/id_rsa
+            - git remote set-url origin https://narayansharma91@Mygithub@62729267:github.com/narayansharma91/bitbucket-backup.git
             - git push origin master
