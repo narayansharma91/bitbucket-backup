@@ -11,4 +11,4 @@ pipelines:
           name: 'Build and Test'
           script:
             - git remote set-url origin  https://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@github.com/narayansharma91/bitbucket-backup.git
-            - git push origin master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
+            - git push origin master
