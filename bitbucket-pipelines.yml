@@ -12,7 +12,7 @@ pipelines:
           script:
             - git remote set-url origin https://github.com/narayansharma91/bitbucket-backup.git
             - echo $PRIVATE_KEY > ~/.ssh/id_rsa.tmp
-            - base64 -d ~/.ssh/id_rsa.tmp > ~/.ssh/id_rsa
+            - base64 ~/.ssh/id_rsa.tmp > ~/.ssh/id_rsa
             - chmod 600 ~/.ssh/id_rsa
             - git add .
             - git commit -m "[skip ci] Updating changes.txt with latest build number."
